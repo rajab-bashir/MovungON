@@ -55,3 +55,46 @@ a & b                              # letters in both a and b
 {'a', 'c'}
 a ^ b                              # letters in a or b but not both
 {'r', 'd', 'b', 'm', 'z', 'l'}
+
+stack = []
+# Push
+stack.append('A')
+stack.append('B')
+stack.append('C')
+print("Stack: ", stack)
+# Peek
+topElement = stack[-1]
+print("Peek: ", topElement)
+# Pop
+poppedElement = stack.pop()
+print("Pop: ", poppedElement)
+# Stack after Pop
+print("Stack after Pop: ", stack)
+# isEmpty
+isEmpty = not bool(stack)
+print("isEmpty: ", isEmpty)
+# Size
+print("Size: ",len(stack))
+
+# Enqueue
+queue.append('A')
+queue.append('B')
+queue.append('C')
+print("Queue: ", queue)
+
+# Peek
+frontElement = queue[0]
+print("Peek: ", frontElement)
+
+# Dequeue
+poppedElement = queue.pop(0)
+print("Dequeue: ", poppedElement)
+
+print("Queue after Dequeue: ", queue)
+
+# isEmpty
+isEmpty = not bool(queue)
+print("isEmpty: ", isEmpty)
+
+# Size
+print("Size: ", len(queue))
