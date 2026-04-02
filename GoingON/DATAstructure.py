@@ -98,3 +98,90 @@ print("isEmpty: ", isEmpty)
 
 # Size
 print("Size: ", len(queue))
+
+#F STRING
+price = 59
+txt = f"The price is {price} dollars"
+print(txt)
+
+#DictionaryCHANGE
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["year"] = 2018
+
+#NestedDICTIONARY
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+
+temperature = 22
+
+if temperature > 30:
+  print("It's hot outside!")
+elif temperature > 20:
+  print("It's warm outside")
+elif temperature > 10:
+  print("It's cool outside")
+else:
+  print("It's cold outside!")
+
+username = "Emil"
+
+if len(username) > 0:
+  print(f"Welcome, {username}!")
+else:
+  print("Error: Username cannot be empty")
+
+username = input("who are you")
+
+if len(username) > 0:
+  print(f"Welcome, {username}!")
+else:
+  print("Error: Username cannot be empty")
+
+  score = 85
+attendance = 90
+submitted = True
+
+if score >= 60:
+  if attendance >= 80:
+    if submitted:
+      print("Pass with good standing")
+    else:
+      print("Pass but missing assignment")
+  else:
+    print("Pass but low attendance")
+else:
+  print("Fail")
+
+temperature = 25
+is_sunny = True
+
+if temperature > 20:
+  if is_sunny:
+    print("Perfect beach weather!")
+
+    temperature = int(input('how is it? '))
+is_sunny = input("Is it sunny? (yes/no): ")
+
+is_sunny = is_sunny.lower() == "yes"
+
+if temperature > 20:
+  if is_sunny:
+    print("Perfect beach weather!")
+  else:
+    print('bad day')
